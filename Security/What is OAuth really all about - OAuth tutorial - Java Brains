@@ -1,0 +1,38 @@
+What is OAuth really all about - OAuth tutorial - Java Brains
+
+https://www.youtube.com/watch?v=t4-416mg6iU
+
+OAuth -> Authorization -> verify permission to do some action
+
+OAuth -> Authorization between services NOT authentication!!!
+
+Services to authorize another serice
+
+
+parinkg attendants / valets 
+vallet key is like key but with reduced access
+vallet key can start nd stop car but can not open the trunk or fuel tank
+
+Car owner use car service and valet service.
+Valet Service needs access drectylto car service to do the job.
+Car service gives limited credentials to valet service.
+
+6:43
+OAuth Access delegation
+
+Example - import from google drive to print photo app service.
+Both services photo service and google drvive service trust user,
+but do not trus other services.
+
+So when photo service ask about access to the google drive file
+google drive tell user that service photo ask about permision to print the file.
+So User has information inform which service wants access to what resource
+and what permission he is requesting.
+If user accept then google sends token to print service.
+Token conteins only limited permission. it is a VALLET KEY
+this is key with limited permisions.
+EVERY TIME PHOTO SERVICE NEEDS ACCESS TO THIS FILE HE
+SENDS IN REQUEST TOKEN.
+
+TOKEN FORMAT IS JWT. JAVA WEB TOKEN
+
